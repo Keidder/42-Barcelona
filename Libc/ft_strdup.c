@@ -11,14 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <string.h>
 
 char	*ft_strdup(const char *s)
 {
 	char	*d;
 	size_t	i;
 
-	d = malloc (sizeof(char) * (ft_strlen(s) + 1));
+	if (!s)
+		return (NULL);
+	d = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!d)
 		return (NULL);
 	i = 0;
@@ -30,15 +31,3 @@ char	*ft_strdup(const char *s)
 	d[i] = '\0';
 	return (d);
 }
-/*
-int	main (void)
-{
-	char	str1[] = "Hola hombres del infierno";
-	char	*str2 = strdup (str1);
-
-	printf ("Este es el source: %s;\n y e", str1);
-	printf ("dest es %s\n", ft_strdup(str2));
-	printf ("Original: %s\n", str2);
-	free (str2);
-	return (0);
-}*/
