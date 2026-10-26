@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -17,36 +17,20 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	i = 0;
-	if (!*little)
-		return ((char *)big);
+	if (!big || !little)
+		return (NULL);
 	if (little[0] == '\0')
 		return ((char *)big);
-	while (big[i] != '\0')
+	i = 0;
+	while (big[i] != '\0' && i < len)
 	{
 		j = 0;
-		while (big[i + j] == little[j] && ((i + j) < len))
-		{
-			if (little[j + 1] == '\0')
-				return ((char *)&big[i]);
+		while (i + j < len && big[i + j] != '\0'
+			&& big[i + j] == little[j])
 			j++;
-		}
+		if (little[j] == '\0')
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	char	*big = "pen penta pentago pentagono";
-	char	*little = "pentago";
-	char	*resultado;
-
-	resultado = ft_strnstr(big, little, 30);
-
-	if (resultado != NULL)
-		printf ("Subcadena encontrada: %s\n", resultado);
-	else
-		printf ("Subcadena no encontrada\n");
-	return (0);
-}*/

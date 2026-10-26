@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -14,18 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	unsigned char	ch;
 
-	i = 0;
 	if (!s)
 		return (NULL);
-	while (s[i] != '\0')
+	ch = (unsigned char)c;
+	while (*s != '\0')
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
-		i++;
+		if ((unsigned char)*s == ch)
+			return ((char *)s);
+		s++;
 	}
-	if ((char)c == '\0')
+	if (ch == '\0')
 		return ((char *)s);
 	return (NULL);
 }

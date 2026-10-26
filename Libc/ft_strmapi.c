@@ -18,10 +18,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	s_len;
 	char	*str;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
 	s_len = ft_strlen(s);
-	if (!s | !f)
-		return (0);
 	str = (char *)malloc(sizeof(char) * (s_len + 1));
 	if (!str)
 		return (NULL);
@@ -33,20 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-/*
-char	toupperr(unsigned int i, char c)
-{
-	(void)i;
-	return ((char)ft_toupper(c));
-}
-
-int	main(void)
-{
-	char	*s = "Hello World";
-	char	*result;
-
-	result = ft_strmapi(s, toupperr);
-	printf ("Strmapi: %s\n", result);
-	free(result);
-	return (0);
-}*/
