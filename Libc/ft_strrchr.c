@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -14,24 +14,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*lw;
+	unsigned char	ch;
+	const char		*last;
 
-	lw = NULL;
-	while (*s)
+	if (!s)
+		return (NULL);
+	ch = (unsigned char)c;
+	last = NULL;
+	while (*s != '\0')
 	{
-		if (*s == (unsigned char)c)
-			lw = (char *)s;
+		if ((unsigned char)*s == ch)
+			last = s;
 		s++;
 	}
-	if ((unsigned char)c == '\0')
+	if (ch == '\0')
 		return ((char *)s);
-	return (lw);
+	return ((char *)last);
 }
-/*
-int	main()
-{
-	char	*s = "Holaaals";
-	printf ("%s", ft_strrchr(s, 'a'));
-	return (0);
-}
-*/
