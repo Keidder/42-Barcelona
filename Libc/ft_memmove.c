@@ -18,38 +18,28 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const unsigned char	*s;
 	unsigned char		*d;
 
-	s = (const unsigned char *)src;
-	d = (unsigned char *)dest;
-	i = 0;
+	if (n == 0 || dest == src)
+		return (dest);
 	if (!src || !dest)
 		return (NULL);
+	s = (const unsigned char *)src;
+	d = (unsigned char *)dest;
 	if (d < s)
 	{
+		i = 0;
 		while (i < n)
 		{
 			d[i] = s[i];
 			i++;
 		}
 	}
-	else if (d > s)
+	else
 	{
-		while (n-- > 0)
+		while (n > 0)
 		{
+			n--;
 			d[n] = s[n];
 		}
 	}
-	return (d);
+	return (dest);
 }
-
-/*
-int	main(void)
-{
-	char	s[] = "Hola";
-	char	d[] = "mundo";
-	size_t	size = 3;
-	char	*r;
-
-	r = (char *)ft_memmove(d, s, size);
-	printf ("memmove: %s", d);
-	return (0);
-}*/
