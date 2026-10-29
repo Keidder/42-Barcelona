@@ -6,7 +6,7 @@
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 18:32:13 by keidruiz          #+#    #+#             */
-/*   Updated: 2026/10/26 18:34:38 by keidruiz         ###   ########.fr       */
+/*   Updated: 2026/10/26 19:53:58 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i] != '\0')
 	{
 		write (fd, &s[i], 1);
