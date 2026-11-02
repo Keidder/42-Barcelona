@@ -6,7 +6,7 @@
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 17:58:16 by keidruiz          #+#    #+#             */
-/*   Updated: 2026/10/29 18:39:44 by keidruiz         ###   ########.fr       */
+/*   Updated: 2026/11/02 18:10:00 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		mapped = ft_lstnew(result);
 		if (!mapped)
 		{
+			del(result);
 			ft_lstclear(&new_list, del);
 			return (NULL);
 		}

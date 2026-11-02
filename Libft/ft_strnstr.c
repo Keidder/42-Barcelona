@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:42:06 by keidruiz          #+#    #+#             */
-/*   Updated: 2026/10/21 18:44:05 by keidruiz         ###   ########.fr       */
+/*   Updated: 2026/11/02 18:05:25 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,19 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	i = 0;
 	if (!*little)
 		return ((char *)big);
 	if (little[0] == '\0')
 		return ((char *)big);
-	while (big[i] != '\0')
+	i = 0;
+	while (i < len && big[i])
 	{
 		j = 0;
-		while (big[i + j] == little[j] && ((i + j) < len))
-		{
-			if (little[j + 1] == '\0')
-				return ((char *)&big[i]);
+		while (j < len - i && big[i + j]
+			&& little[j] && big[i + j] == little[j])
 			j++;
-		}
+		if (little[j] == '\0')
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (NULL);

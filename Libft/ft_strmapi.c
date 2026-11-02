@@ -6,7 +6,7 @@
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 18:22:46 by keidruiz          #+#    #+#             */
-/*   Updated: 2026/10/26 18:31:22 by keidruiz         ###   ########.fr       */
+/*   Updated: 2026/11/02 18:06:55 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*str;
 
 	i = 0;
-	s_len = ft_strlen(s);
-	if (!s | !f)
+	if (!s || !f)
 		return (0);
+	s_len = ft_strlen(s);
 	str = (char *)malloc(sizeof(char) * (s_len + 1));
 	if (!str)
 		return (NULL);

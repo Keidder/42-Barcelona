@@ -6,7 +6,7 @@
 /*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 18:16:41 by keidruiz          #+#    #+#             */
-/*   Updated: 2026/10/20 18:19:33 by keidruiz         ###   ########.fr       */
+/*   Updated: 2026/11/02 18:11:05 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	lw = NULL;
 	while (*s)
 	{
-		if (*s == (unsigned char)c)
+		if ((unsigned char)*s == (unsigned char)c)
 			lw = (char *)s;
 		s++;
 	}
