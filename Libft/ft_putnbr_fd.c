@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 21:31:40 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/17 21:59:13 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/26 18:40:12 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 18:40:46 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

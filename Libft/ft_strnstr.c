@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 21:01:19 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/17 19:48:33 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/21 18:42:06 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/21 18:44:05 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(void)
 	char	*big = "pen penta pentago pentagono";
 	char	*little = "pentago";
 	char	*resultado;
-	
+
 	resultado = ft_strnstr(big, little, 30);
 
 	if (resultado != NULL)

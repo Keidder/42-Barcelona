@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 21:08:43 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/22 16:02:44 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/21 18:16:46 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/21 18:27:21 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (d);
 }
+
 /*
 int	main(void)
 {

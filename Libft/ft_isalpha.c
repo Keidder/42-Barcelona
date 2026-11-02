@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:03:04 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2025/11/17 22:40:25 by keruiz-c         ###   ########.fr       */
+/*   Created: 2026/10/13 18:51:08 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 17:44:52 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

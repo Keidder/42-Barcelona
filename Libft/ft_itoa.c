@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 15:18:27 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/17 21:36:52 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/26 18:21:08 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 18:22:34 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@ int	main(void)
 {
 	int	s = 2147483647;
 
-	printf ("Antes de itoa: %d\n", s); 
+	printf ("Antes de itoa: %d\n", s);
 	printf ("Despues de itoa: %s\n", ft_itoa(s));
-	return (0); 
+	return (0);
 }
 */

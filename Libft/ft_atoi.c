@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 22:02:56 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/08 20:40:39 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/20 18:20:10 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/29 20:01:37 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,25 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	sign;
+	int	i;
 	int	result;
+	int	sign;
 
-	while ((*nptr >= 9 && *nptr <= 13) || *nptr == 32)
-	{
-		nptr++;
-	}
+	i = 0;
 	sign = 1;
-	if (*nptr == '-' || *nptr == '+')
+	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
+		i++;
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if (*nptr == '-')
+		if (nptr[i] == '-')
 			sign *= -1;
-		nptr++;
+		i++;
 	}
 	result = 0;
-	while (*nptr >= '0' && *nptr <= '9')
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		result = result * 10 + (*nptr - '0');
-		nptr++;
+		result = result * 10 + (nptr[i] - '0');
+		i++;
 	}
 	return (result * sign);
 }
-/*
-int	main(int ac, char **av)
-{
-		if (ac == 2)
-		{
-				const char	*nptr;
-
-				nptr = av[1];
-				printf("Input string: %s\n", nptr);
-				printf("The result of ft_atoi is: %i\n", ft_atoi(nptr));
-				printf("The result of atoi is: %i\n", atoi(nptr));
-
-		}
-		return (0);
-}*/

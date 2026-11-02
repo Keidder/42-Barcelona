@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:01:45 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/08 20:02:05 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/21 17:55:22 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 17:54:24 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,5 @@ void	ft_bzero(void *s, size_t n)
 
 	ptr = (unsigned char *)s;
 	while (n--)
-	{
 		*ptr++ = '\0';
-	}
 }
-/*
-int	main(void)
-{
-	char	h[] = "Hola, que tal?";
-
-	printf ("Antes (%s)\n", h);
-	ft_bzero(h, 5);
-	write (1, h, sizeof(h));
-	return (0);
-}*/

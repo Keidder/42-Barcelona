@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:09:01 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/08 20:09:05 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/20 19:30:30 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/21 18:02:49 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-int	main(void)
-{
-	char	str[] = "Hola, que tal";
-
-	ft_memset(str, ';', 5);
-	printf ("%s\n", str);
-	return (0);
-}*/

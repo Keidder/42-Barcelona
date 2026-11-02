@@ -3,28 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmarrero <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 19:06:56 by rmarrero          #+#    #+#             */
-/*   Updated: 2024/09/26 12:35:50 by rmarrero         ###   ########.fr       */
+/*   Created: 2026/10/26 17:33:57 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 17:43:36 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
-//#include <stdio.h>
-//#include <stdlib.h>
 
-/*
-void    ft_bzero(void *s, size_t n);
-size_t  ft_strlen(const char *str);
-char    *ft_strdup(const char *s1);
-void    *ft_calloc(size_t count, size_t size);
-*/
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*pointer;
 
+	i = 0;
 	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
@@ -42,65 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (pointer);
 }
-/*
-int	main(void)
-{
-	char s[] = "Hi new world, new testing text for this function.";
-	printf("new testing: %s\n", ft_substr(s, 14, 11));
-	return (0);
-}
-
-void    ft_bzero(void *s, size_t n)
-{
-        size_t                  i;
-        unsigned char   *str;
-
-        str = (unsigned char *)s;
-        i = 0;
-        while (i < n)
-        {
-                str[i] = '\0';
-                i++;
-        }
-}
-
-size_t  ft_strlen(const char *str)
-{
-        int     length;
-
-        length = 0;
-        while (str[length])
-                length++;
-        return (length);
-}
-char    *ft_strdup(const char *s1)
-{
-        size_t  i;
-        char    *duplicado;
-
-        i = 0;
-        duplicado = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char));
-        if (!duplicado)
-                return (NULL);
-        while (s1[i])
-        {
-                duplicado[i] = s1[i];
-                i++;
-        }
-        duplicado[i] = '\0';
-        return (duplicado);
-}
-
-void    *ft_calloc(size_t count, size_t size)
-{
-        size_t                  i;
-        unsigned char   *pointer;
-
-        i = 0;
-        pointer = malloc(count * size);
-        if (!pointer)
-                return (NULL);
-        ft_bzero(pointer, count * size);
-        return (pointer);
-}
-*/

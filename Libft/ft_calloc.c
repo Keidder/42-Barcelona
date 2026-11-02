@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:02:18 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/22 21:36:08 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/21 18:48:46 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/21 18:48:52 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(tmp, nmemb * size);
 	return (tmp);
 }
-/*
-int	main(void)
-{
-	int	*arr;
-
-	arr = ft_calloc(10, 5);
-	write (1, (char *)arr, 5);
-	free (arr);
-	return (0);
-}*/

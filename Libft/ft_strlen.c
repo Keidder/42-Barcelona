@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:12:57 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/09 15:48:59 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/19 17:55:07 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/20 19:11:58 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	len;
+	size_t	i;
 
-	len = 0;
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-	return (len);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
-/*
-int	main(void)
-{
-	char	hola[] = "Hola, que tal todooooooo?";
-
-	printf ("El len de %s es %li", hola, ft_strlen(hola));
-	return (0);
-}*/

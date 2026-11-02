@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:09:36 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/23 02:28:50 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/19 18:01:13 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 17:52:47 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,21 +21,11 @@ char	*ft_strchr(const char *s, int c)
 		return (NULL);
 	while (s[i] != '\0')
 	{
-		if (s[i] == (unsigned char)c)
-		{
+		if (s[i] == (char)c)
 			return ((char *)&s[i]);
-		}
 		i++;
 	}
-	if ((unsigned char)c == '\0')
-		return ((char *)s + i);
+	if ((char)c == '\0')
+		return ((char *)s);
 	return (NULL);
 }
-/*
-int	main(void)
-{
-	char	string[] = "ale..lea";
-
-	printf("%s\n", ft_strchr(string, '\0'));
-	return (0);
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/17 21:04:12 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/22 16:18:37 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/21 18:38:15 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/21 18:40:51 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-	char	s1[] = {-128, 0, 127, 0};
-	char	s2[] = {-128, 0, 127, 0};
-
-	printf ("La comparacion es: %i", ft_memcmp(s1, s2, 4));
-	return (0); 
-}*/

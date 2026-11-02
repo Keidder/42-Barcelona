@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/11 20:25:00 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/21 18:39:51 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/26 18:23:13 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 18:31:51 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/10 19:36:08 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/17 19:49:37 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/26 18:22:46 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 18:31:22 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

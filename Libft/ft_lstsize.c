@@ -3,14 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/19 22:00:27 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2025/03/19 22:04:16 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/27 18:27:53 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/27 18:44:38 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	*ft_lstsize(t_list *lst)
+#include "libft.h"
+
+unsigned int	ft_lstsize(t_list *lst)
 {
-		
+	unsigned int	count;
+
+	count = 0;
+	while (lst != NULL)
+	{
+		count++;
+		lst = lst->next;
+	}
+	return (count);
 }

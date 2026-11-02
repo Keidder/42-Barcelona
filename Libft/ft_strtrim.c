@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 15:37:42 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/23 02:10:02 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/26 18:13:16 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/26 18:15:18 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <string.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -39,14 +38,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(trimmed, &s1[i], s1_len - i + 1);
 	return (trimmed);
 }
-/*
-int	main (void)
-{
-
-	char	j[] = "hhh,,i'luciiias;;;'";
-	char	*r;
-	r = ft_strtrim (j,", h ; ' i ");
-	printf("String recortada: %s\n", r);
-	free(r);
-	return (0);
-}*/

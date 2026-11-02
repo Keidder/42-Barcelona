@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:15:04 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/23 02:22:21 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/19 18:16:41 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/20 18:19:33 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -21,9 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (*s)
 	{
 		if (*s == (unsigned char)c)
-		{
 			lw = (char *)s;
-		}
 		s++;
 	}
 	if ((unsigned char)c == '\0')
@@ -31,12 +28,10 @@ char	*ft_strrchr(const char *s, int c)
 	return (lw);
 }
 /*
-int	main(void)
+int	main()
 {
-	char	j[] = "Hola";
-
-	printf ("String 1: %s\n", j);
-	printf ("string 2: %s\n", ft_strrchr(j, 'o'));
-	printf("Funcion original %s\n", strrchr(j, 'o'));
+	char	*s = "Holaaals";
+	printf ("%s", ft_strrchr(s, 'a'));
 	return (0);
-}*/
+}
+*/

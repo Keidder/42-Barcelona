@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kruiz-cu <kruiz-cu@student.42barcelon      +#+  +:+       +#+        */
+/*   By: keidruiz <keidruiz@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 20:13:50 by kruiz-cu          #+#    #+#             */
-/*   Updated: 2024/10/23 01:33:05 by kruiz-cu         ###   ########.fr       */
+/*   Created: 2026/10/20 19:08:34 by keidruiz          #+#    #+#             */
+/*   Updated: 2026/10/20 19:08:43 by keidruiz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (str1[count] - str2[count]);
 }
-/*
-int	main(void)
-{
-	char	s1[] = "abcdefgh";
-	char	s2[] = "abcdwxyz";
-
-	printf ("La comparacion es %i", ft_strncmp(s1, s2, 4));
-	return (0);
-}*/
